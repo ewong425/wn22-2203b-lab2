@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exercise1.ListViewController">
+   <children>
+      <ListView fx:id="lvItem" layoutY="50.0" prefHeight="100.0" prefWidth="150.0">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="120.0" />
+         </VBox.margin></ListView>
+      <Label fx:id="selectedItem" prefHeight="17.0" prefWidth="209.0">
+         <VBox.margin>
+            <Insets left="20.0" top="15.0" />
+         </VBox.margin>
+      </Label>
+      <Button fx:id="listViewBtn" mnemonicParsing="false" onAction="#displaySelectedItem" text="Select Item">
+         <VBox.margin>
+            <Insets left="115.0" top="55.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
